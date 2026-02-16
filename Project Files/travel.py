@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Configure Gemini API Key
-genai.configure(api_key="AIzaSyCADqpnvJyfPflO4EKythO5QhP34YG9eRg")
+genai.configure(api_key="YOUR GOOGLE API KEY HERE")
 
 # Initialize the model
 model = genai.GenerativeModel(model_name="gemini-2.5-flash")
@@ -42,3 +42,4 @@ if st.button("Generate Itinerary ✨"):
             st.write(itinerary)
     else:
         st.warning("Please enter all required details.")
+
